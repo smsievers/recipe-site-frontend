@@ -1,0 +1,38 @@
+.fluid-container {
+    
+    background: #8e5d9b 0% 0% no-repeat padding-box;
+    width: 100%;
+    
+    h1 {
+        text-align: center;
+        color: #64d191;
+        margin: 1;
+        height: 50%;
+        margin-left: 25px;
+        
+        
+
+    }
+    
+}
+
+.genericlogo {
+    height: 25px;
+    width: 25px;
+    margin-right: 25px;
+}
+
+.top-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+h1:hover {
+    cursor: pointer;
+}
+p:hover {
+    cursor: pointer;
+}
+img:hover {
+    cursor: pointer;
+}
