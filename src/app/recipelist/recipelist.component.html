@@ -1,1 +1,15 @@
-<p>recipelist works!</p>
+<div class="button-row">
+    <button [routerLink]="'/add-recipe'">Add Recipe</button>
+</div>
+
+<div class = "row p-4">
+    <div class="col-lg-4 col-md-6 col-sm-12 p-2" *ngFor="let recipe of recipes">
+        <div class="card" (click)="recipe(recipe)">
+            <div class="card-body">
+                <h3 class="card-title">{{recipe.name}}</h3>\
+                <img class="card-img" src="recipe.image">
+                <p class="card-content">{{recipe.content}}</p>
+            </div>
+        </div>
+    </div>
+</div>

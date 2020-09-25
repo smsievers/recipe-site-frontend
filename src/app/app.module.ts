@@ -8,6 +8,11 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { RecipepageComponent } from './recipepage/recipepage.component';
 import { RecipelistComponent } from './recipelist/recipelist.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { HttpClientModule } from '@angular/common/http';
+import { AddRecipeComponent } from './add-recipe/add-recipe.component';
+import { FormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -16,11 +21,15 @@ import { RecipelistComponent } from './recipelist/recipelist.component';
     FooterComponent,
     HomeComponent,
     RecipepageComponent,
-    RecipelistComponent
+    RecipelistComponent,
+    AddRecipeComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule,
+    HttpClientModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

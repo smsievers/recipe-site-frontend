@@ -1,0 +1,34 @@
+<div class="main">
+
+
+    <div class="card">
+      <!-- <img src="https://i.kym-cdn.com/entries/icons/facebook/000/013/564/doge.jpg" class="card-img-top" alt="..."> -->
+      <div class="card-body">
+        <h5 class="card-title">Add New Recipe</h5>
+        <form #form (keyup.enter)="addRecipe()">
+          <div class="form-group">
+            <label for="title">Title</label>
+            <input title="title" type="text" class="form-control" id="title" aria-describedby="titleHelp" [(ngModel)]="newRecipe.title">
+          </div>
+          <div class="form-group">
+            <label for="body">body</label>
+            <textarea title="body" type="textarea" class="form-control" id="body" aria-describedby="bodyHelp" [(ngModel)]="newRecipe.body"></textarea>
+          </div>
+          <div class="form-group">
+            <label for="cook_time">Cook Time</label>
+            <input title="cook_time" type="number" class="form-control" id="cook_time" aria-describedby="cook_timeHelp" [(ngModel)]="newRecipe.cook_time">
+          </div>
+          <div class="form-group">
+            <label for="total_time">Total Time</label>
+            <input title="total_time" type="number" class="form-control" id="total_time" aria-describedby="total_timeHelp" [(ngModel)]="newRecipe.total_time">
+          </div>
+          <div class="form-group">
+            <label for="author">Author</label>
+            <input title="author" type="text" class="form-control" id="author" aria-describedby="authorHelp" [(ngModel)]="newRecipe.author">
+          </div>
+          
+          <button type="submit" class="btn btn-primary" (click)="addRecipe()">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
